@@ -1,0 +1,130 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    /* position: relative; */
+}
+.nav{
+    max-width: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100vh;
+    color: #D9D9D9;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    background: #00337B;
+}
+.logo{
+    margin: 10px;
+    margin-bottom: 40px;
+}
+.nav .line {
+    height: 50px;
+    margin: auto;
+    background: #D9D9D9;
+    border: 2px solid  #D9D9D9;
+}
+
+         .page1,
+         .page2,
+         .page3,
+         .page4,
+         .page5{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: auto;
+     line-height: 25px;
+    border: 3px solid#D9D9D9;
+    border-radius: 50%;
+
+}
+.page2{
+    color: #00337B;
+    background: #D9D9D9;
+    box-shadow: 0px 0px 3px 3px #D9D9D9 ;
+    border:2px solid ;
+    animation: page 1.0s linear ;
+}
+@keyframes page{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.workbody{
+    width: 88%;
+    position: absolute;
+    /* background: #00337B; */
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    
+}
+
+.menu{
+    min-height: 57px;
+    background: rgba(204, 224, 253, 0.3);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 100%;
+    position: relative;
+}
+.menu .menunav{
+    margin: auto;
+    margin-left:  25px;
+    display:flex;
+    list-style: none;
+    gap: 6%;
+}
+.menunav li :hover{
+    background-color: rgba(25, 104, 221, 0.6);
+    color: gray;
+    padding: 5px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.menunav .dropdown:hover{
+    padding: 0%;
+    background: none;
+}
+.dropdw{
+    background: rgb(142, 150, 189);
+    display: none;
+    list-style: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 30px;
+    padding: 5px;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menunav .drop:hover .dropdw{
+    display: block;
+}
+.dropdw > li:hover{
+    background:   rgba(25, 104, 221);
+    color: gray;
+}
